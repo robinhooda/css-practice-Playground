@@ -1,0 +1,39 @@
+html,body{
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 8% auto;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(217, 190, 241);
+}
+
+aside{
+    grid-area: sidebar;
+    background-color: rgb(162, 149, 236);
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(223, 139, 223);
+}
+
+@media only screen and (max-width: 525px) {
+    body{
+        grid-template-columns: 100%;
+        grid-template-rows: 8% auto;
+        grid-template-areas: 
+            "header"
+            "main"
+    }
+}
