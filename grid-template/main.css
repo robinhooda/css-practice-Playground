@@ -31,15 +31,15 @@ header{
     background-color: rgb(181, 119, 238);
     grid-area: header;
 }
-section:nth-last-of-type(1){
+section:nth-of-type(1){
     background-color: rgb(149, 178, 231);
     grid-area: sec1;
 }
-section:nth-last-of-type(2){
+section:nth-of-type(2){
     background-color: rgb(90, 136, 221);
     grid-area: sec2;
 }
-section:nth-last-of-type(3){
+section:nth-of-type(3){
     background-color: rgb(52, 116, 233);
     grid-area: sec3;
 }
