@@ -13,13 +13,14 @@ body{
 }
 
 body{   
-        grid-template-columns: auto 27% 27% 27%;
-        grid-template-rows: 8% 30% auto 10%;
-        grid-template-areas: 
-            "sidebar header header header"
-            "sidebar sec1 sec2 sec3"
-            "sidebar main main main"
-            "sidebar footer footer footer";
+    /* for screens having width less than 768 px */
+    grid-template-columns: auto 27% 27% 27%;
+    grid-template-rows: 8% 30% auto 10%;
+    grid-template-areas: 
+        "sidebar header header header"
+        "sidebar sec1 sec2 sec3"
+        "sidebar main main main"
+        "sidebar footer footer footer";
     }
 
 aside{
@@ -57,7 +58,7 @@ footer{
 @media only screen and (max-width: 768px) {
     body{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 8% auto auto 10%;
         grid-template-areas: 
             "header header header"
             "sec1 sec2 sec3"
@@ -66,16 +67,17 @@ footer{
     } 
   }
 
-/* for screens having width less than 768 px */
-@media only screen and (max-width: 500px) {
+/* for screens having width less than 525px px */
+@media only screen and (max-width: 525px) {
     body{
         grid-template-columns: 100%;
-        grid-template-rows: auto;
+        grid-template-rows: 8% auto auto auto auto 10%;
         grid-template-areas: 
             "header"
             "sec1"
             "sec2"
             "sec3"
+            "main"
             "footer"
     }
   }
