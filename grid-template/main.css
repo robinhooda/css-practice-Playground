@@ -10,9 +10,7 @@ body{
         
     /* for gap space in column */
     column-gap: 5px;
-}
-
-body{   
+   
     /* for screens having width less than 768 px */
     grid-template-columns: auto 27% 27% 27%;
     grid-template-rows: 8% 30% auto 10%;
@@ -21,11 +19,12 @@ body{
         "sidebar sec1 sec2 sec3"
         "sidebar main main main"
         "sidebar footer footer footer";
-    }
+}
 
 aside{
     background-color:rgb(24, 24, 240);
     grid-area: sidebar;
+    font-size: 0.8rem;
 }
 header{
     background-color: rgb(181, 119, 238);
